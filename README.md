@@ -1,9 +1,9 @@
 
 # Website for Discord Bot Riley Ghost
-Discord made by SGJ.
+Discord Bot made by SGJ.
 
 
-- [@TheSGJ](https://www.github.com/TheSGJ)
+[@TheSGJ](https://www.github.com/TheSGJ)
 
   
 ## License
