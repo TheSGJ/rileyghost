@@ -10,4 +10,4 @@ Discord made by SGJ.
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
-![Logo](http://rileyghost.cf/class/20211101_090146.png)
+![Logo](rileyghost.cf/class/20211101_090146.png)
