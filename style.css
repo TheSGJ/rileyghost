@@ -23,33 +23,7 @@ body{
     font-style: normal;
 }
 
-.list{
-  
-}
-nav{
-  background: black;
-  display: flex;
-  text-align: center;
-  margin-bottom: 4px;
-}
-.items{
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-}
 
-.list a{
-    text-decoration: none;
-    color: white;
-}
-
-.item{
-    font-family: sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    display: inline;
-    padding: 2px;
-}
 
 .para{
     padding-bottom: 10px;
