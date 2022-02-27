@@ -1,5 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 body{
-    background:rgb(220, 220, 233);
+    background-color: skyblue;
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 75px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    background-color: bisque;
+    height: 65px;
+}
+
+nav ul li{
+    padding: 0 28px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:  black;
+}
+
+a:hover{
+    background-color: black;
+    color: white;
+}
+
+.logo img{
+    width: 50px;
+    padding: 0 4px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 2.6rem;
 }
 
 .header{
