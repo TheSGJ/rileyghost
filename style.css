@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 body{
-    background-color: skyblue;
+    background-color: white;
 }
 
 *{
@@ -19,7 +19,7 @@ nav ul{
     display: flex;
     list-style-type: none;
     align-items: center;
-    background-color: bisque;
+    background-color: black;
     height: 65px;
 }
 
@@ -31,12 +31,12 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color:  black;
+    color:  white;
 }
 
 a:hover{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .logo img{
