@@ -1,141 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-body{
-    background-color: white;
-}
-
 *{
+    padding: 0;
     margin: 0;
-    padding: 0%;
+    box-sizing: border-box;
+
 }
 
-nav{
-    font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 75px;
+header{
+    background-color: #262626;
 }
 
-nav ul{
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    background-color: black;
-    height: 65px;
+li{
+    list-style: none;
 }
 
-nav ul li{
-    padding: 0 28px;
-    font-size: 1.4rem;
-    font-weight: bold;
-}
-
-nav ul li a{
+a{
+    color: white;
     text-decoration: none;
-    color:  white;
+
 }
 
-a:hover{
-    background-color: white;
-    color: black;
-}
-
-.logo img{
-    width: 50px;
-    padding: 0 4px;
-}
-
-.logo{
+.navbar{
+    min-height: 70px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    font-weight: bolder;
-    font-size: 2.6rem;
+    padding: 0 24px;
+
 }
 
-.header{
-    color: rgba(60, 86, 99, 0.973);
-    background: rgba(255, 255, 255, 0);
-    padding: 1px;
-    padding-left: 10 px;
-    padding-right: 0px;
-    padding-bottom: 0.5px;
-    padding-top: 0.5px;
-    margin:0;
-    text-align: center;
-    border-style: solid;
-    border-width: 25px;
-    border-right: 30px;
-    border-left: 30px;
-    border-color: coral;
-    border-radius: 10px;
-    text-shadow: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
 }
 
+.nav-branding{
+    font-size: 2rem;
+}
 
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color:dodgerblue
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+
+}
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position:fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        /* transition: 0.3s; */
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
 
 .para{
-    padding-bottom: 10px;
-    padding-top: 1vw;
+
     padding-left: 5px;
     padding-right: 5px;
-    margin-right: 8px;
+    font-size: 10vh;
     background-color: skyblue;
-    border-style: solid;
-    border-width: 8px;
-    border-radius: 12px;
-    border-color: deepskyblue;
     text-align: center;
-    text-transform: initial;
     font-family: Times;
     font-size: 16px;
     
 }
 
-a{
-    letter-spacing: 0px;
-}
-
-button:hover{
-     background-color: black;
-     color: white;
-     border-style: solid;
-     border-radius: 8px;
-     border-color: white;
-     
-}
-
-.myflex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.myflex > div{
-    background: rgb(252, 191, 80);
-    width: 210px;
-    height: 210px;
-    margin: 15px;
-    border-style: dotted;
-    border-radius: 8px;
-    border-color: rgb(165, 38, 64);
     
-}
 
-.cmdl{
-    padding: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: medium;
-    padding: 5px;
-    text-align: center;
-}
 
 .cr{
     text-align: right;
     margin-top: 30px;
-}
-#click{
-  background-color: deepskyblue;
-  border-radius: 8px;
 }

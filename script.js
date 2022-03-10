@@ -1,30 +1,29 @@
-//Contact Form in PHP
-const form = document.querySelector("form"),
-statusTxt = form.querySelector(".button-area span");
-form.onsubmit = (e)=>{
-  e.preventDefault();
-  statusTxt.style.color = "#0D6EFD";
-  statusTxt.style.display = "block";
-  statusTxt.innerText = "Sending your message...";
-  form.classList.add("disabled");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const nl = document.querySelector(".nav-link");
 
-  let xhr = new XMLHttpRequest();
-  xhr.open("POST", "message.php", true);
-  xhr.onload = ()=>{
-    if(xhr.readyState == 4 && xhr.status == 200){
-      let response = xhr.response;
-      if(response.indexOf("required") != -1 || response.indexOf("valid") != -1 || response.indexOf("failed") != -1){
-        statusTxt.style.color = "red";
-      }else{
-        form.reset();
-        setTimeout(()=>{
-          statusTxt.style.display = "none";
-        }, 3000);
-      }
-      statusTxt.innerText = response;
-      form.classList.remove("disabled");
-    }
-  }
-  let formData = new FormData(form);
-  xhr.send(formData);
-}
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+// document.querySelectorAll("nav-link").forEach(n => n.addEventListener('click', () => {
+//     hamburger.classList.remove("active");
+//     navMenu.classList.remove("active");
+// }))
+
+window.addEventListener('scroll', () => {
+
+	hamburger.classList.remove("active");
+
+	navMenu.classList.remove("active");
+
+})
+
+nl.addEventListener('click', () => {
+
+	hamburger.classList.remove("active");
+
+	navMenu.classList.remove("active");
+
+})
